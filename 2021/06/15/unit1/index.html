@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="So1omon">
+    
+    <title>
+        
+            高电压技术总结1 |
+        
+        So1omon&#39;s blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/mylove.jpg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/mylove.jpg","favicon":"/images/mylove.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/myscreen.png","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.2"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            <a class="logo-title" href="/">
+                So1omon&#39;s blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">高电压技术总结1</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/mylove.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">So1omon</span>
+                        
+                            <span class="author-label">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-06-15 00:00:00
+    </span>
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1>高电压技术索引</h1>
+<h2 id="第0章-绪论"><a class="header-anchor" href="#第0章-绪论">¶</a>第0章 绪论</h2>
+<p>电压等级(高压HV,超高压EHV,特高压UHV,直流特高压)</p>
+<p>输电方式(架空线路,电缆输电,同杆多回,紧凑型杆塔,分裂导线)</p>
+<p>高电压特殊问题</p>
+<ol>
+<li>绝缘问题(绝缘材料,绝缘结构,电压形式)</li>
+<li>高电压试验问题(高电压的产生,试验,测量)</li>
+<li>过电压防护问题(研究电压,绝缘,保护三者之间的绝缘配合问题)</li>
+</ol>
+<h2 id="第1章-气体放电过程的分析"><a class="header-anchor" href="#第1章-气体放电过程的分析">¶</a>第1章 气体放电过程的分析</h2>
+<h3 id="1-1-气体放电以及带电质点"><a class="header-anchor" href="#1-1-气体放电以及带电质点">¶</a>1.1 气体放电以及带电质点</h3>
+<p>气体放电主要形式(辉光放电,电晕放电,刷状放电,火花放电,电弧放电)(分别在均匀,极不均匀,低气压,高气压条件下)</p>
+<blockquote>
+<p>极不均匀电场独有电晕放电,刷状放电,且没被击穿</p>
+</blockquote>
+<p>带点质点的产生</p>
+<ol>
+<li>电极空间
+<ol>
+<li>碰撞电离</li>
+<li>光电离</li>
+<li>热电离</li>
+</ol>
+</li>
+<li>电极表面
+<ol>
+<li>正离子碰撞阴极</li>
+<li>光电效应</li>
+<li>热电子放射</li>
+<li>强场放射</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p>碰撞电离引入的概念:$\alpha$过程,$\beta$过程,自由行程,正离子碰撞阴极引入$\gamma$过程<br>
+自由电子碰撞气体分子<br>
+正离子碰撞气体分子<br>
+温度高,气压低,自由行程$\lambda$大<br>
+正离子碰撞阴极</p>
+</blockquote>
+<p>带电质点的消失</p>
+<ol>
+<li>带电质点流入电极</li>
+<li>带电质点扩散</li>
+<li>带电质点复合</li>
+</ol>
+<h3 id="1-2-汤逊理论"><a class="header-anchor" href="#1-2-汤逊理论">¶</a>1.2 汤逊理论</h3>
+<p>汤逊理论</p>
+<ol>
+<li>
+<p>非自持放电和自持放电的对比(撤去光照射等外电离因素,电离可以维持)</p>
+</li>
+<li>
+<p>电子崩,电子电离系数$\alpha$</p>
+<blockquote>
+<p>$\alpha$定义为一个电子沿电场方向行经1cm长度平均发生的碰撞电离次数</p>
+<p>公式如下</p>
+<p>$I = I_0 e^{\alpha d}$</p>
+<p>$空气相对密度\delta = \frac{pT_0}{p_0T}$</p>
+<p>$自由行程 \lambda =\frac{1}{A \delta}$</p>
+<p>$电离概率\alpha/\beta = A e^{-B \delta / E}$</p>
+</blockquote>
+</li>
+<li>
+<p>$\gamma$过程 自持放电条件</p>
+<blockquote>
+<p>正离子碰撞阴极,复合产生的光子到达阴极</p>
+<p>临界条件:<br>
+$\gamma e^{\alpha d}=1$ 或$\alpha d = ln \frac{1}{\gamma}$</p>
+</blockquote>
+</li>
+</ol>
+<p>巴申定律 均匀电场击穿电压</p>
+<p>巴申定律描述:$U_b=f(pd) 或 U_b=f(\delta d)$</p>
+<p>均匀电场击穿电压公式:<br>
+$$<br>
+U_b= \frac{B\delta d}{ln(\frac{A\delta}{ln {\gamma}^{-1}})}<br>
+$$<br>
+巴申定律解释(U形曲线的左半支和友半支)</p>
+<ol>
+<li>左半支:$\delta d$的下降主要是相对空气密度$\delta$下降,导致空气密度过低,气体分子数量太少,碰撞电离减少,故击穿电压上升</li>
+<li>右半支:d增加时,电压不变,导致间隙场强E下降,导致电子电离系数$\alpha$下降,电离减弱;$\delta$增加时,电子自由行程$\lambda$缩短,电子不易积累能量,电离减弱.故击穿电压上升</li>
+</ol>
+<p>汤逊理论不再适用</p>
+<ol>
+<li>$\delta d$ 过小,而U上升</li>
+<li>$\delta d$  过大,流注理论</li>
+</ol>
+<h3 id="1-3-流注理论"><a class="header-anchor" href="#1-3-流注理论">¶</a>1.3 流注理论</h3>
+<p>畸变(同削异增)</p>
+<p>结果: 大大加强崩头及崩尾的场强而削弱了电子崩内正.负电荷区域之间的电场</p>
+<p>正流注</p>
+<ol>
+<li>外电离因素形成电子崩</li>
+<li>电子崩向前发展,头部电离强烈,形成的空间电荷大大加强尾部电场,使其向周围放射大量光子</li>
+<li>光子引起空间光电离,形成光电子受电子崩正空间电荷吸引,并在畸变电场作用下形成二次电子崩</li>
+<li>二次与主电子崩汇合过程中其头部电子进入主电子崩内部,由于电场强度较小,电子形成负离子,从而使大量正负带电质点构成等离子体,也就是正流注</li>
+<li>而等离子导电性能好,头部又是空间正电荷,二次电子崩电离过程中继续进行光电离,从而形成新的二次电子崩,从而延长流注,最终间隙被等离子体通道贯穿,此时击穿完成.</li>
+</ol>
+<p>负流注</p>
+<ol>
+<li>外施电压较高,故无需经过整个间隙,其头部电离程度即可形成流注</li>
+<li>发展速度: 由于电子的运动受到电子崩留下正电荷的牵制,速度慢于正流注</li>
+</ol>
+<p>流注自持放电条件</p>
+<p>公式<br>
+$$<br>
+\alpha d = ln \gamma ^{-1} =20<br>
+$$</p>
+<blockquote>
+<p>$\gamma $ 与汤逊理论中的相差很大</p>
+</blockquote>
+<p>流注解释放电现象</p>
+<p>放电现象: $\delta d$ 很大时,放电具有通道形式, 而汤逊放电呈持续一片, 因为电荷密度较小, 电子崩不至于影响到临近空间电场, 故无法形成二次电子崩</p>
+<p>放电时间: 由于存在光子的传播, 流注发展速度极快</p>
+<p>阴极材料影响: 维持流注放电自持的是光电离, 故与阴极表面材料无关</p>
+<h3 id="1-4-不均匀电场"><a class="header-anchor" href="#1-4-不均匀电场">¶</a>1.4 不均匀电场</h3>
+<p>不均匀程度的划分<br>
+$$<br>
+f=E_{max}/E_{av}<br>
+$$</p>
+<p>$$<br>
+E_{av}=U/d<br>
+$$</p>
+<p>均匀:<br>
+$$<br>
+f=1<br>
+$$<br>
+稍不均匀:<br>
+$$<br>
+f&lt;2<br>
+$$<br>
+极不均匀:<br>
+$$<br>
+f&gt;4<br>
+$$</p>
+<p>电晕放电</p>
+<p>极不均匀电场的自持放电</p>
+<p>极性效应</p>
+<p>“晕正高”, “击正低”, “稍正高”</p>
+<ol>
+<li>棒-板模型中, 由于正离子运动速度较慢, 故畸变过程中正离子更为集中, 从而正离子对外电场影响更为显著.</li>
+<li>从而1可以解释 “晕正高”</li>
+<li>“击正低” 是由于正棒-板中, 棒极附近形成流注, 头部的正空间电荷加强前沿场强;负棒-板中, 棒极附近形成扩散状分布的等离子体, 头部的正空间电荷削弱前沿电场</li>
+<li>“稍正高” 是由于&quot;晕正高&quot;, 因为稍不均匀电场发生电晕时,就已经可以看作是击穿了</li>
+</ol>
+<p>长间隙击穿</p>
+<ol>
+<li>先导放电:流注较长时, 较多的电子沿通道流向电极, 根部电子最多,根部温度升高, 出现热电离, 此时该通道就是先导通道</li>
+<li>先导: 高电导, 可以保证端部又较高的场强, 从而形成新的流注, 负先导由于 “击正低”, 需要更高的电压</li>
+</ol>
+<p>主放电</p>
+<p>条件: 先导接近相对电极时</p>
+<p>迅速, 完成气隙的击穿</p>
+<p>而不太长间隙只分为 电子崩, 流注, 和主放电</p>
+<p>第一章结束!</p>
+<h2 id><a class="header-anchor" href="#">¶</a></h2>
+
+        </div>
+
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2021/06/29/%E8%AF%BB%E5%B1%80%E5%A4%96%E4%BA%BA%E5%89%8D%E8%A8%80/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item"></span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2021/06/15/unit3/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">高电压技术总结3</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>&nbsp;-&nbsp;
+            
+            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">So1omon</a>
+        </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.2</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">高电压技术索引</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC0%E7%AB%A0-%E7%BB%AA%E8%AE%BA"><span class="nav-number">1.1.</span> <span class="nav-text">第0章 绪论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E6%B0%94%E4%BD%93%E6%94%BE%E7%94%B5%E8%BF%87%E7%A8%8B%E7%9A%84%E5%88%86%E6%9E%90"><span class="nav-number">1.2.</span> <span class="nav-text">第1章 气体放电过程的分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E6%B0%94%E4%BD%93%E6%94%BE%E7%94%B5%E4%BB%A5%E5%8F%8A%E5%B8%A6%E7%94%B5%E8%B4%A8%E7%82%B9"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.1 气体放电以及带电质点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E6%B1%A4%E9%80%8A%E7%90%86%E8%AE%BA"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2 汤逊理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-%E6%B5%81%E6%B3%A8%E7%90%86%E8%AE%BA"><span class="nav-number">1.2.3.</span> <span class="nav-text">1.3 流注理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-%E4%B8%8D%E5%9D%87%E5%8C%80%E7%94%B5%E5%9C%BA"><span class="nav-number">1.2.4.</span> <span class="nav-text">1.4 不均匀电场</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.3.</span> <span class="nav-text">¶</span></a></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
